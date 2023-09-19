@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %}
+
+<p style="color: black;">Message from {{sender_email}},</p>
+<p style="color: black;">
+  Name: {{name}}
+</p>
+<p>
+  Register Email: {{reg_email}}
+</p>
+<table
+  role="presentation"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  class="btn btn-primary"
+>
+  <tbody>
+    <tr>
+      <td align="left">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <span>Message: {{msg}}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>Role: {{role}}</p>
+<p>Good luck! Hope it works.</p>
+
+{% endblock %}

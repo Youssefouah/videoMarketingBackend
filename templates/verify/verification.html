@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<p>Hi {{first_name}},</p>
+<p>
+  Thanks for creating an account with us. Please verify your email address with the following verification code.
+</p>
+<table
+  role="presentation"
+  border="0"
+  cellpadding="0"
+  cellspacing="0"
+  class="btn btn-primary"
+>
+  <tbody>
+    <tr>
+      <td align="left">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td>
+                <span>Verification Code: {{code}}</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>Good luck! Hope it works.</p>
+
+{% endblock %}
